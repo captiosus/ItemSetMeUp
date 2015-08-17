@@ -5,7 +5,7 @@ require 'typhoeus/adapters/faraday'
 class Riotapi < ActiveRecord::Base
   def new
     Taric.configure! do |config|
-      config.api_key = 'whatever_key_rito_assigned_you'
+      config.api_key = 'e4d67b9c-85a6-444c-b285-a36e55a34bdd'
       c.adapter = :typhoeus # default is Faraday.default_adapter
     end
   end
