@@ -1,0 +1,50 @@
+<nav class="navbar navbar-default">
+  <div id="navigation" class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="logo">
+        <%= link_to "ItemSetMeUp", root_path %>
+      </li>
+      <li class="navlinks">
+        <%= link_to "Home", root_path %>
+      </li>
+      <li class="navlinks">
+      </li>
+      <li class="navlinks">
+      </li>
+      <li class="navlinks">
+      </li>
+    </ul>
+    <%= form_for :player, url: players_path, html: {class: "navbar-form navbar-right" } do |f| %>
+      <%= f.text_field :player%>
+      <%= f.button do %>
+        <%= content_tag('span class="glyphicon glyphicon-search"') %>
+      <% end %>
+    <% end %>
+  </div>
+</nav>
+<div id="main" class="container-fluid">
+  <div id="banner" class="container-fluid">
+    <div class="row">
+      <div id="main-banner" class="col-md-8">
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div id="mini-banner-top" class="container-fluid">
+          </div>
+        </div>
+        <div class="row">
+          <div id="mini-banner-bot" class="container-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="textbox">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
