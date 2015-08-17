@@ -1,5 +1,6 @@
 class Riotapi < ActiveRecord::Base
   def new
+    require 'taric'
     require 'faraday'
     require 'typhoeus'
     require 'typhoeus/adapters/faraday'
