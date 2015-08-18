@@ -36,11 +36,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5'
 # Use Autoprefixer to add proper prefixes to CSS code
 gem 'autoprefixer-rails'
-#Typhoeus for Taric
-gem 'typhoeus'
-# Use Taric for Riot API
-gem 'taric'
-
+# Use ruby-lol for Riot API
+gem 'ruby-lol'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

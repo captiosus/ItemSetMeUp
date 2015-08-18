@@ -1,4 +1,5 @@
 class PlayersController < ApplicationController
+  require 'lol'
   def index
     @players = Player.all
   end
@@ -15,6 +16,7 @@ class PlayersController < ApplicationController
     @player = Player.new(player_params)
 
     if @player.save
+      client = Lol::Client.new "e4d67b9c-85a6-444c-b285-a36e55a34bdd", {region: "na"}
       redirect_to @player
     else
       redirect_to root_path
